@@ -67,6 +67,10 @@ At the moment, these options are implemented:
 
 **-r (90|180|270)**: Specify image rotation in multiples of 90 degrees.
 
+**-w pixels**: Set the width of the display in pixels. Defaults to 1920.
+
+**-h pixels**: Set the height of the display in pixels. Defaults to 1080.
+
 **-l**: Enables low-latency mode. Low-latency mode reduces latency by effectively rendering audio and video frames as soon as they are received, ignoring the associated timestamps. As a side effect, playback will be choppy and audio-video sync will be noticably off.
 
 **-a (hdmi|analog|off)**: Set audio output device
