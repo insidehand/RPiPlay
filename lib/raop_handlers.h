@@ -129,6 +129,8 @@ raop_handler_info(raop_conn_t *conn,
     plist_t mac_address_node = plist_new_string(hw_addr);
     plist_dict_set_item(r_node, "macAddress", mac_address_node);
 
+	printf("XXXX at the point where the screen width is\n");
+
     plist_t displays_node = plist_new_array();
     plist_t displays_0_node = plist_new_dict();
     plist_t displays_0_uuid_node = plist_new_string("e0ff8a27-6738-3d56-8a16-cc53aacee925");

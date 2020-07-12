@@ -45,6 +45,8 @@ struct raop_s {
     dnssd_t *dnssd;
 
     unsigned short port;
+    unsigned short display_width;
+    unsigned short display_height;
 };
 
 struct raop_conn_s {
@@ -338,6 +340,13 @@ void
 raop_set_port(raop_t *raop, unsigned short port) {
     assert(raop);
     raop->port = port;
+}
+
+void
+raop_set_display(raop_t *raop, unsigned short display_width, unsigned short display_height) {
+    assert(raop);
+    raop->display_width = display_width;
+    raop->display_height = display_height;
 }
 
 unsigned short
