@@ -31,9 +31,8 @@
 #include "raop_rtp_mirror.h"
 #include "raop_ntp.h"
 
-//int unsigned short tijmen = 1234;
-unsigned int info_display_width = 1024;
-unsigned int info_display_height = 600;
+unsigned int info_display_width = 1920;
+unsigned int info_display_height = 1080;
 
 struct raop_s {
     /* Callbacks for audio and video */
