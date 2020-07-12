@@ -31,6 +31,10 @@
 #include "raop_rtp_mirror.h"
 #include "raop_ntp.h"
 
+//int unsigned short tijmen = 1234;
+unsigned int info_display_width = 1024;
+unsigned int info_display_height = 600;
+
 struct raop_s {
     /* Callbacks for audio and video */
     raop_callbacks_t callbacks;
@@ -45,8 +49,7 @@ struct raop_s {
     dnssd_t *dnssd;
 
     unsigned short port;
-    unsigned short display_width;
-    unsigned short display_height;
+
 };
 
 struct raop_conn_s {
@@ -345,8 +348,8 @@ raop_set_port(raop_t *raop, unsigned short port) {
 void
 raop_set_display(raop_t *raop, unsigned short display_width, unsigned short display_height) {
     assert(raop);
-    raop->display_width = display_width;
-    raop->display_height = display_height;
+	info_display_width = display_width;
+	info_display_height = display_height;
 }
 
 unsigned short
