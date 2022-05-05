@@ -106,8 +106,8 @@ void print_info(char *name) {
     printf("-n name               Specify the network name of the AirPlay server\n");
     printf("-b (on|auto|off)      Show black background always, only during active connection, or never\n");
     printf("-r (90|180|270)       Specify image rotation in multiples of 90 degrees\n");
-	printf("-w (width in pixels)  Specify display width. Defaults to 1920\n");
-	printf("-h (height in pixels) Specify display height. Defaults to 1080\n");
+    printf("-w (width in pixels)  Specify display width. Defaults to 1920\n");
+    printf("-h (height in pixels) Specify display height. Defaults to 1080\n");
     printf("-l                    Enable low-latency mode (disables render clock)\n");
     printf("-a (hdmi|analog|off)  Set audio output device\n");
     printf("-d                    Enable debug logging\n");

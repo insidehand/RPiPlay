@@ -80,6 +80,27 @@ At the moment, these options are implemented:
 **-v/-h**: Displays short help and version information.
 
 
+# Setup script
+
+```
+sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+sudo apt-get install -y git vim
+
+git clone https://github.com/FD-/RPiPlay.git
+cd RPiPlay
+
+sudo apt-get install -y cmake
+sudo apt-get install -y libavahi-compat-libdnssd-dev
+sudo apt-get install -y libplist-dev
+sudo apt-get install -y libssl-dev
+
+mkdir build
+
+cd build
+
+cmake --DCMAKE_CXX_FLAGS="-O3" --DCMAKE_C_FLAGS="-O3" ..
+```
+
 # Disclaimer
 
 All the resources in this repository are written using only freely available information from the internet. The code and related resources are meant for educational purposes only. It is the responsibility of the user to make sure all local laws are adhered to.
